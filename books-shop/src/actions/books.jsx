@@ -1,4 +1,9 @@
-export const setBooks = (books) => ({
+const setBooks = (books) => ({
     type: 'SET_BOOK',
     payload: books
 })
+
+
+
+export { setBooks };
+

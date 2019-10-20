@@ -4,6 +4,7 @@ import Menu from './Menu';
 import { Container } from 'semantic-ui-react';
 import BookCard from './BookCard';
 import { Card } from 'semantic-ui-react';
+import Filter from '../containers/Filter';
 
 
 
@@ -19,13 +20,14 @@ class App extends React.Component{
 
   render(){
 
-   const { books, isReady , cart} = this.props;
+   const { books, isReady , cart } = this.props;
 
    console.log(cart);
     return(
     <>
       <Container>
         <Menu />
+        <Filter />
         <Card.Group itemsPerRow={4}>
           {
             !isReady ? <b>Download...</b>:
