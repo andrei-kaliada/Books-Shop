@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
 
-const MenuComponents = () => {
+const MenuComponents = ({totalPrice, count}) => {
 
     return(
         <Menu>
@@ -17,14 +17,14 @@ const MenuComponents = () => {
             name='signup'
            
           >
-            Итого: &nbsp; <b>0</b>
+            Итого: &nbsp; <b>{totalPrice ? totalPrice : '0'}</b>
           </Menu.Item>
 
           <Menu.Item
             name='help'
            
           >
-            Корзина (<b>0</b>)
+            Корзина (<b>{count ? count : '0'}</b>)
           </Menu.Item>
         </Menu.Menu>
       </Menu>
