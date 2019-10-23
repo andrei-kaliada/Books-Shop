@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Container } from 'semantic-ui-react';
-import BookCard from './BookCard';
+import BookCard from '../containers/Cart';
 import { Card } from 'semantic-ui-react';
 import Filter from '../containers/Filter';
 import Menu from '../containers/Menu';

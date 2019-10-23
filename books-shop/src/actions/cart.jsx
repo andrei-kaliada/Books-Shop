@@ -1,11 +1,11 @@
-const addToCard = (filter) => ({
-    type: 'SET_FILTER',
-    payload: filter,
+const addToCart = (obj) => ({
+    type: 'ADD_TO_CART',
+    payload: obj,
 })
 
-const removeFromCarde = (query) => ({
-    type: 'SET_SEARCHQUERY',
-    payload: query,
+const removeFromCarte = (id) => ({
+    type: 'REMOVE_FROM_CART',
+    payload: id,
 })
 
-export { addToCard, removeFromCarde };
+export { addToCart, removeFromCarte };
